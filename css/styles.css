@@ -286,13 +286,13 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.work-item-icon::before {
+ .work-item-icon::before {
   display: block;
   content: '';
   height: 112px;
   background: var(--lolg-studio-color);
   border-radius: 4px;
-  background-image: url(../images/Icon1.svg);
+  
 }
 
 .work-item-icon-clock::before {
@@ -301,7 +301,7 @@ body {
   height: 112px;
   background: var(--lolg-studio-color);
   border-radius: 4px;
-  background-image: url(../images/Icon2.svg);
+ 
 }
 .work-item-icon-diagram::before {
   display: block;
@@ -309,7 +309,7 @@ body {
   height: 112px;
   background: var(--lolg-studio-color);
   border-radius: 4px;
-  background-image: url(../images/Icon3.svg);
+  
 }
 
 .work-item-icon-astronaut::before {
@@ -318,7 +318,7 @@ body {
   height: 112px;
   background: var(--lolg-studio-color);
   border-radius: 4px;
-  background-image: url(../images/Icon4.svg);
+  
 }
 
 /*  Section 3 */
@@ -402,15 +402,23 @@ h3 .team-pics-title {
 .social-media-list {
     flex-basis: calc((100% - 72px)/4);
     background-color: #4d5ae5;
+    border-radius: 50%;
 }
+
 
 .social-media-icon {
   color: #ffffff;
 }
 
 .social-media-link {
-color: #404bbf;
+background-color: #404bbf;
+display: block;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+
 }
+
 /* Section5 Customers*/
 .customers {
     display: flex;
@@ -421,6 +429,7 @@ color: #404bbf;
     align-items: center;
     justify-content: space-between;
 }
+
 
 .customers-list {
     flex-basis: calc((100% - 120px)/6); 
