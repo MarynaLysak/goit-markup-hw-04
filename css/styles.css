@@ -196,8 +196,21 @@ ul {
 }
 /* HeroSection1 */
 .hero {
+  text-align: center;
   padding: 188px 0;
   background-color: var(--hero-background-color);
+  background-image: linear-gradient(
+  rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)
+  ),
+  url(../images/people-office.jpg);
+  margin-left: auto;
+  margin-top: auto;
+  max-width: 1440px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .hero-blok {
@@ -214,6 +227,8 @@ ul {
   max-width: 496px;
   margin-bottom: 48px;
 }
+
+
 /* Main Button */
 .main-button {
   border: none;
@@ -269,6 +284,41 @@ body {
 }
 .work-item {
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.work-item-icon::before {
+  display: block;
+  content: '';
+  height: 112px;
+  background: var(--lolg-studio-color);
+  border-radius: 4px;
+  background-image: url(../images/Icon1.svg);
+}
+
+.work-item-icon-clock::before {
+  display: block;
+  content: '';
+  height: 112px;
+  background: var(--lolg-studio-color);
+  border-radius: 4px;
+  background-image: url(../images/Icon2.svg);
+}
+.work-item-icon-diagram::before {
+  display: block;
+  content: '';
+  height: 112px;
+  background: var(--lolg-studio-color);
+  border-radius: 4px;
+  background-image: url(../images/Icon3.svg);
+}
+
+.work-item-icon-astronaut::before {
+  display: block;
+  content: '';
+  height: 112px;
+  background: var(--lolg-studio-color);
+  border-radius: 4px;
+  background-image: url(../images/Icon4.svg);
 }
 
 /*  Section 3 */
@@ -328,7 +378,6 @@ h3 .team-pics-title {
   border-radius: 0px 0px 4px 4px;
   min-width: 250px;
 }
-
 .section-team {
   border-bottom: 1px solid var(--lolg-studio-color);
 }
@@ -338,6 +387,39 @@ h3 .team-pics-title {
   overflow: hidden;
 }
 
+.social-media {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 232px;
+    height: 40px;
+    border: 1px solid red;
+}
+
+.social-media-list {
+    flex-basis: calc((100% - 72px)/4);
+}
+/* Section5 Customers*/
+.customers {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.customers-list {
+    flex-basis: calc((100% - 120px)/6);
+    width: 168px;
+    height: 88px;
+
+    border: 1px solid #8E8F99;
+border-radius: 4px;
+}
 /* Scrol Portfolio */
 
 .secondary-button {
@@ -433,9 +515,41 @@ h3 .team-pics-title {
   background: var(--hero-background-color);
   color: var(--footer-text-color);
   line-height: 24px;
-  padding: 100px 0;
+  
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
 }
 
 .footer-p {
   max-width: 264px;
+}
+
+.footer-section-title {
+    color: var(--main-color);
+    line-height: 1.5;
+}
+.footer-social-media {
+    display: flex;
+    padding: 0;
+    margin-top: 16px;
+    gap: 16px;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    width: 208px;
+    height: 40px;
+    border: 1px solid red;
+}
+
+.footer-list {
+    flex-basis: calc((100% - 48px)/4);
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+
+.footer-container {
+    margin: 100px 120px;
 }
