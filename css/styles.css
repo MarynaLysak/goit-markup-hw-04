@@ -409,11 +409,10 @@ h3 .team-pics-title {
     margin: 0;
     gap: 24px;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .customers-list {
-    flex-basis: calc((100% - 120px)/6);
+    flex-basis: calc((100% - 120px)/6); 
     width: 168px;
     height: 88px;
 
