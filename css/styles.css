@@ -37,6 +37,7 @@ Links  color: #4D5AE5*/
   --lolg-studio-color: #f4f4fd;
   --footer-text-color: #e7e9fc;
   --main-color: #ffffff;
+  --hover-green: #31d0aa;
 }
 /* .container {
   margin-left: auto;  
@@ -200,17 +201,16 @@ ul {
   padding: 188px 0;
   background-color: var(--hero-background-color);
   background-image: linear-gradient(
-  rgba(46, 47, 66, 0.7),
-  rgba(46, 47, 66, 0.7)
-  ),
-  url(../images/people-office.jpg);
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   margin-left: auto;
   margin-top: auto;
   max-width: 1440px;
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .hero-blok {
@@ -227,7 +227,6 @@ ul {
   max-width: 496px;
   margin-bottom: 48px;
 }
-
 
 /* Main Button */
 .main-button {
@@ -286,39 +285,22 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 
- .work-item-icon::before {
-  display: block;
-  content: '';
-  height: 112px;
-  background: var(--lolg-studio-color);
+.item-box {
+  display: flex;
+  background-color: var(--lolg-studio-color);
   border-radius: 4px;
-  
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
-.work-item-icon-clock::before {
+.svg-ad {
   display: block;
-  content: '';
-  height: 112px;
-  background: var(--lolg-studio-color);
-  border-radius: 4px;
- 
-}
-.work-item-icon-diagram::before {
-  display: block;
-  content: '';
-  height: 112px;
-  background: var(--lolg-studio-color);
-  border-radius: 4px;
-  
-}
-
-.work-item-icon-astronaut::before {
-  display: block;
-  content: '';
-  height: 112px;
-  background: var(--lolg-studio-color);
-  border-radius: 4px;
-  
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
 }
 
 /*  Section 3 */
@@ -388,57 +370,77 @@ h3 .team-pics-title {
 }
 
 .social-media {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 24px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 232px;
-    height: 40px;
-    border: 1px solid red;
+  display: flex;
+  padding: 0;
+  margin-top: 8px;
+  gap: 24px;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 232px;
+  height: 40px;
+  border: 1px solid red;
 }
 
 .social-media-list {
-    flex-basis: calc((100% - 72px)/4);
-    background-color: #4d5ae5;
-    border-radius: 50%;
+  flex-basis: calc((100% - 72px) / 4);
+  background-color: var(--link-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .social-media-icon {
-  color: #ffffff;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  color: var(--main-color);
 }
 
 .social-media-link {
-background-color: #404bbf;
-display: block;
-width: 40px;
-height: 40px;
-border-radius: 50%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
 
+.social-media-link-facebook {
+  padding-top: 5px;
 }
 
 /* Section5 Customers*/
-.customers {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 24px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
+.customers {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 .customers-list {
-    flex-basis: calc((100% - 120px)/6); 
-    width: 168px;
-    height: 88px;
+  flex-basis: calc((100% - 120px) / 6);
+  width: 168px;
+  height: 88px;
 
-    border: 1px solid #8E8F99;
-border-radius: 4px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 }
+
+.customers-list:hover {
+  border-color: var(--hover-color);
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Scrol Portfolio */
 
 .secondary-button {
@@ -534,12 +536,10 @@ border-radius: 4px;
   background: var(--hero-background-color);
   color: var(--footer-text-color);
   line-height: 24px;
-  
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  
 }
 
 .footer-p {
@@ -547,28 +547,31 @@ border-radius: 4px;
 }
 
 .footer-section-title {
-    color: var(--main-color);
-    line-height: 1.5;
+  color: var(--main-color);
+  line-height: 1.5;
 }
 .footer-social-media {
-    display: flex;
-    padding: 0;
-    margin-top: 16px;
-    gap: 16px;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    width: 208px;
-    height: 40px;
-    border: 1px solid red;
+  display: flex;
+  padding: 0;
+  margin-top: 16px;
+  gap: 16px;
+  flex-direction: row;
+  width: 208px;
+  height: 40px;
+  border: 1px solid red;
 }
 
 .footer-list {
-    flex-basis: calc((100% - 48px)/4);
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
+  flex-basis: calc((100% - 48px) / 4);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.footer-list:hover {
+  background-color:var(--hover-green)
 }
 
 .footer-container {
-    margin: 100px 120px;
+  margin: 100px 120px;
 }
