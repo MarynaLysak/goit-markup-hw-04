@@ -431,10 +431,18 @@ h3 .team-pics-title {
   border-radius: 4px;
 }
 
-.customers-list:hover {
+
+.customers-list:hover, :focus {
   border-color: var(--hover-color);
 }
 
+.customers-icon {
+  fill: var(--border-color);
+}
+.customers-icon:hover {
+  fill: var(--hover-color);
+   
+}
 .customers-list {
   display: flex;
   align-items: center;
