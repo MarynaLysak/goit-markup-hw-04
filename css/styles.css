@@ -37,6 +37,7 @@ Links  color: #4D5AE5*/
   --lolg-studio-color: #f4f4fd;
   --footer-text-color: #e7e9fc;
   --main-color: #ffffff;
+  --border-color:#8e8f99;
   --hover-green: #31d0aa;
 }
 /* .container {
@@ -379,7 +380,6 @@ h3 .team-pics-title {
 
   width: 232px;
   height: 40px;
-  border: 1px solid red;
 }
 
 .social-media-list {
@@ -427,7 +427,7 @@ h3 .team-pics-title {
   width: 168px;
   height: 88px;
 
-  border: 1px solid #8e8f99;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
 }
 
@@ -558,7 +558,6 @@ h3 .team-pics-title {
   flex-direction: row;
   width: 208px;
   height: 40px;
-  border: 1px solid red;
 }
 
 .footer-list {
