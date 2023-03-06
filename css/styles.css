@@ -391,13 +391,20 @@ body {
   align-items: center;
 }
 
-.social-media-icon {
+/*.social-media-icon {
   align-items: center;
   width: 50%;
   height: 50%;
   color: var(--main-color);
+}*/
+.social-media-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
-
 .social-media-link {
   display: flex;
   width: 40px;
@@ -460,10 +467,18 @@ body {
 
 
 .customers-icon {
+  display: inline-block;
   object-fit: fill;
   fill: var(--border-color);
 }
-
+/*.customer-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}*/
 .customers-list {
   display: flex;
   align-items: center;
