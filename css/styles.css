@@ -434,12 +434,10 @@ body {
 
 .customers-list {
   flex-basis: calc((100% - 120px) / 6);
-  max-width: 168px;
-  height: 88px;
+ 
   justify-content: center;
 
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
+ 
 
 }
 
@@ -448,6 +446,10 @@ body {
   align-items: center;
   justify-content: center;
 
+  max-width: 168px;
+  height: 88px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
 }
 
 .customers-list:hover { 
@@ -610,7 +612,9 @@ body {
   height: 40px;
   border-radius: 50%;
 }
-
+.footer-list .social-media-link {
+  background-color: var(--border-color);
+}
 .footer-list .social-media-link:hover {
   background-color:var(--hover-green)
 }
